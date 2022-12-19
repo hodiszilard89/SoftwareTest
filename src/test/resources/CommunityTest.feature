@@ -7,10 +7,11 @@ Feature: Spotify sing up page
 
   Scenario: 1. Check Articles Number
     Given social cards is visibility
+    Then scroll to article cards
+    And I can see 4 cards
 
 
   Scenario Outline: 2'<n>' Check valid references of social cards
-
 
     Examples:
       | n | social name | reference                                   |
